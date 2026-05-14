@@ -13,6 +13,11 @@ combined = pd.concat([red, white], ignore_index=True)
 X = combined.drop(columns=["quality", "type"]).values
 y = combined["type"].values 
 
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42, stratify=y
+)
+
+
 # Remap nhãn về 0-based index (quality: 3..9 → 0..6)
 class_names = ['Red Whine', 'White Wine']
 

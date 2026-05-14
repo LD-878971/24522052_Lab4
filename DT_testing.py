@@ -2,12 +2,8 @@ import numpy as np
 from sklearn.model_selection import train_test_split, StratifiedKFold
 from sklearn.metrics import f1_score, classification_report, confusion_matrix
 from Decision_Tree import DecisionTreeClassifier
-from data_preprocessing import X, y, class_names
+from data_preprocessing import X, y, X_test, X_train, y_train, y_test, class_names
 
-# ── Train/Test Split ──────────────────────────────────────────────────────────
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42, stratify=y
-)
 
 # ── 1. Tìm max_depth tốt nhất ─────────────────────────────────────────────────
 depths      = [2, 3, 5, 7, 10, None]
