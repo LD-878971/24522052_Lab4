@@ -1,5 +1,5 @@
 import numpy as np
-from Decision_Tree import DecisionTreeClassifier
+from Decision_Tree.Decision_Tree import DecisionTreeClassifier
 
 
 class RandomForestClassifier:

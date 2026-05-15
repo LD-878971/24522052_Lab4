@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from Random_Forest import RandomForestClassifier
-from Decision_Tree import DecisionTreeClassifier
+from Random_forest.Random_Forest import RandomForestClassifier
+from Decision_Tree.Decision_Tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split, StratifiedKFold
 from sklearn.metrics import f1_score, classification_report, confusion_matrix
 from data_preprocessing import X, y, X_test, X_train, y_train, y_test, class_names
