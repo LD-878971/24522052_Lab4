@@ -1,5 +1,5 @@
-Họ và tên: Đoàn Thảo Vy
-MSSV: 24522052
+Họ và tên: Đoàn Thảo Vy  
+MSSV: 24522052  
 Ở mỗi folder Decision Tree và Random Forest bao gồm:
 - 1 file model tự xây dựng
 - 1 file model thư viện
